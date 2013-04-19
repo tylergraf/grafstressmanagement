@@ -1,0 +1,1197 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Anthology Documentation</title>
+	<!-- Framework CSS -->	
+	<link rel="stylesheet" href="styles/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	
+	<!--[if lt IE 8]><link rel="stylesheet" href="styles/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	
+	<link type="text/css" rel="stylesheet" href="styles/SyntaxHighlighter.css"></link>
+
+	<script language="javascript" src="script/shCore.js"></script>
+	<script language="javascript" src="script/shBrushCss.js"></script>
+	<script language="javascript" src="script/shBrushXml.js"></script>
+	<script language="javascript" src="script/shBrushJScript.js"></script>
+	<script language="javascript">
+	window.onload = function () {
+    dp.SyntaxHighlighter.ClipboardSwf = '/script/clipboard.swf';
+    dp.SyntaxHighlighter.HighlightAll('code');
+}
+
+	</script>
+	
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:10px; margin-top:10px; }
+		.box p { margin-bottom:10px; }
+        img{border:1px solid #ccc; margin-top:10px; margin-bottom: 10px; padding:7px; background-color:#ebebeb;}
+        .red{color:red;}
+        h3.title, h1, h2, h3.message{font-style: italic; font-family:"Warnock Pro","Goudy Old Style","Palatino","Book Antiqua",Georgia,serif; color:#828282;text-transform:none;}
+        h3.message{font-size:1.6em;}
+        #web_links ul li{display:inline;}
+        #web_links img{padding:0px; background-color: transparent;}
+        .back_to_top{font-size:14px;text-decoration: none; color:#828282;}
+        h3 a{color:#888888; text-decoration:none;}
+        h3,h3.uppercase{text-transform:uppercase;}
+	</style>
+</head>
+
+
+<body>
+  <div id="lineTop" ></div>
+	<div class="container">
+	
+	
+		<h3 class="center alt title">&ldquo;Anthology WordPress Theme&rdquo; Documentation by &ldquo;Pexeto&rdquo; v1.4.5</h3>
+		
+		<hr>
+		
+		<div id="logo" class="center"><a href="index.html"></a></div>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 10/10/2010<br>
+					By: Pexeto<br>
+					<a href="http://pexeto.com/">http://pexeto.com/</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing Anthology theme. If you have any questions that are beyond the scope of this help file, please refer to the <a href="#support">Support section</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<div id="web_links" >       
+ 
+ <ul>
+        
+       <li> <a href="http://twitter.com/pexeto" ><img src="images/doc_button1.png" /></a></li>
+       <li> <a href="http://themeforest.net/user/pexeto/portfolio" ><img src="images/doc_button2.png" /></a></li>
+       <li> <a href="http://pexeto.com/" ><img src="images/doc_button3.png" /></a></li>
+       </ul>
+       
+       </div>
+          <hr/>
+		
+		<h3 class="center message">If you like this theme, please don't forget to rate it on the ThemeForest site. Thank you!</h3>
+		<hr/>
+		
+		<h2 id="toc" class="alt content">Table of <strong>Contents</strong></h2>
+		<hr />
+		<ol class="alpha"><li><a href="#html">Useful instructions</a>
+		      <ol>
+        <li><a href="#activate">Activating the theme</a></li>
+        <li><a href="#options">Options page</a></li>
+        <li><a href="#custom">Setting a custom field</a></li>
+        <li><a href="#thumbnail">Setting a thumbnail to the post</a></li>
+      </ol>
+		</li>
+		<li><a href="#header">The header</a>
+		<ol>
+        <li><a href="#logo">Changing the logo</a></li>
+        <li><a href="#menu">The menu</a></li>
+      </ol>
+		</li>
+	    <li><a href="#footer">The footer</a></li>
+	    <li><a href="#sidebar">The sidebars</a></li>
+	    <li><a href="#sliders">The sliders</a>
+		<ol>
+        <li><a href="#thum_slider">Thumbnail Slider</a></li>
+         <li><a href="#big_thum_slider">Big Thumbnail Slider</a></li>
+        <li><a href="#nivo_slider">Nivo Slider/Fader</a></li>
+      </ol>
+		</li>
+		<li><a href="#template">Template pages</a>
+		<ol>
+		  <li><a href="#index">Index/Blog page</a></li>   
+        <li><a href="#home">Home page</a></li>
+        <li><a href="#featured">Featured page</a></li>
+        <li><a href="#portfolio">Portfolio page</a></li>  
+        <li><a href="#portfolio_gallery">Portfolio Gallery page</a></li> 
+        <li><a href="#quick_gallery">Quick/Easy Gallery page</a></li>
+        <li><a href="#contact">Contact form page</a></li>
+        <li><a href="#default">The default page</a></li>
+        </ol>
+		</li>
+		<li><a href="#styles">Changing the theme style</a></li>
+		<li><a href="#shortcodes">Shortcodes</a></li>
+		<li><a href="#translation">Translation</a></li>
+		<li><a href="#widgets">Widgets included</a></li>
+		<li><a href="#css">CSS files</a></li>
+    <li><a href="#js">JavaScript files</a></li>
+    <li><a href="#psd">PhotoShop files</a></li>
+    <li><a href="#php">PHP files</a></li>  
+    <li><a href="#updates">Updates</a>
+    	<ol>
+    		<li><a href="#v11">Version 1.1</a></li>
+    		<li><a href="#v12">Version 1.2</a></li>
+    		<li><a href="#v13">Version 1.3</a></li>
+    		<li><a href="#v14">Version 1.4</a></li>
+    		<li><a href="#v141">Version 1.4.1</a></li>
+    		<li><a href="#v142">Version 1.4.2</a></li>
+    		<li><a href="#v143">Version 1.4.3</a></li>
+    		<li><a href="#v144">Version 1.4.4</a></li>
+    		<li><a href="#v145">Version 1.4.5</a></li>
+    	</ol>
+    </li>  
+    <li><a href="#troubleshooting">Troubleshooting</a></li>
+    <li><a href="#support">Support</a></li>
+        </ol>
+		
+		
+		<div class="note_box">
+		<p> <b>Note: </b>
+		If you have any questions that are beyond the scope of this help file, please refer to the <a href="#support">Support section</a>.
+		</p>
+		</div>
+		
+	  <br />
+		
+		<a name="html" ><h2>Useful instructions<a href="#toc" class="back_to_top"> &nbsp;back to top</a></h2></a>
+		<hr />
+		<h3><a name="activate">Activating the theme</a></h3>
+		<hr />
+		<p>There are 2 main ways to upload the theme:</p>
+		<ol>
+		<li><b>Via the built in WordPress theme uploader</b>
+		<p>Below you can read the instructions about installing a theme via the WordPress uploader, but you can also
+		watch the "<i>Installing a Pexeto Theme via WordPress Uploader</i>" video <a href="http://support.pexeto.com/topic/video-4">here</a></p>
+		<p>First you need to unzip the download file and find the zip file called "Anthology".
+		After this you have to go in the admin panel &raquo; Appearance &raquo; Themes, click on the
+		<b>Install Themes tab</b> and in this
+		section in the top there is a link "Upload". After you click the "Upload" link, a new page
+		will be opened where you will be asked to find the Anthology.zip file on your local
+		file system. </p>
+		</li>
+		<li><b>Via FTP client</b>
+			<p>Below you can read the instructions about installing a theme via FTP, but you can also
+		watch the "<i>Installing a Pexeto Theme via FTP</i>" video <a href="http://support.pexeto.com/topic/video-4">here</a></p>
+		<p>If you know the FTP login details of the server where your site is hosted and you have a
+		FTP client installed, you might consider using this way of uploading your theme. First you have to
+		unzip the download file, find the zip file called "Anthology", unzip it and upload the folder to the 
+		main WordPress installation folder &raquo; wp-content &raquo; themes. Please note that if you 
+		prefer this way of installation, you have to make sure that the main files of the theme are contained
+		just within one folder of the <b>themes</b> folder. The right way to locate your root theme files is
+		for example <b>themes/Anthology</b> but not <b>themes/Anthology/Anthology</b>.</p>
+		</li>
+		</ol>
+		<p>After you have uploaded the theme to the server you will need to activate it.
+		 In order to activate this theme you have to go to the admin panel &raquo; Appearance &raquo; Themes. In this section you should
+  see the theme with a title <b>Anthology by Pexeto</b>. Just click on <b>Activate</b> button and your theme should get activated. </p>
+	
+	
+	<div class="note_box"><b>Note: </b>This theme is WordPress version 3.0 and higher compatible, so please make sure
+	you have the latest version of WordPress installed.</div>
+	
+	<p>
+	<b><u>Importing the demo content</u></b><br/>
+	If you would like to import the demo content and start editing the theme from the created content rather
+	than from scratch, you need to import the <b>demo_exported.xml</b> file that is included with the download
+	folder. You can do this by going to the WordPress admin panel -> Tools -> Import -> Select <b>WordPress</b>,
+	 find the <b>demo_exported.xml</b> file from your local file system and upload it.
+	</p>
+	
+	<br/>	
+<hr />		
+<h3><a name="options">Options page</a></h3>
+<hr/>
+<p>
+When you activate this theme, an options page is created in order to help you make the theme settings
+much easier. This page is located in the <b>admin panel &raquo; Appearance &raquo; Anthology Options</b>.
+</p>
+	<img src="images/options.jpg" alt="" />
+	<br/><br/>	
+<hr />
+ 
+     <h3><a name="custom" >Setting a custom field</a></h3>
+  <hr>   
+        <p>Many times in this documentation you will be told that you need to set a custom field
+        for a page or post. There are some custom field that have been created for this theme.
+        Those custom fields are located just below the main content area of the page/post when
+        opened in "edit" mode. For the portfolio items the section is called "ANTHOLOGY PORTFOLIO ITEM SETTINGS" and
+        for the pages the section is called "ANTHOLOGY PAGE SETTINGS".</p>
+        <img src="images/custom.jpg" alt="" />
+        
+        <br/><br/>
+         <hr> 
+        <h3><a name="thumbnail" >Setting a thumbnail to the post</a></h3>
+  <hr>  
+         <p>In order to set a thumbnail to a post, when creating/editing your post in the bottom of the right sidebar
+  there is a link "Set Featured Image":<br/>
+  <img src="images/set_thumbnail.jpg" /><br/>
+  If you click on this link, a window will be opened where 
+  you can choose the image. When you select the desired image, you have to click on the "Use as featured image"
+  link.</p><br/>
+  <img src="images/use_thumbnail.jpg" /><br/><br/>
+ 
+        <br/>
+        <a name="header" ><h2>The header<a href="#toc" class="back_to_top"> &nbsp;back to top</a></h2></a>
+		<hr />
+		<h3><a name="logo">Changing the logo</a></h3>
+		<hr />
+        
+        
+    <img src="images/logo.jpg" alt="" /><br />
+        <p> You can either use your own existing logo image or edit the included logo PSD file. If you
+    choose the second option then the file you need to edit is called <b>logo.psd</b></p>
+    
+  <p>There are two main ways to change your logo:</p>
+  <ol>
+  <li>From the admin panel- you have to go to the <a href="#options">options setting</a> page &raquo; <b>Styles</b> 
+  and upload (or insert the image URL) in the <b>Logo Image</b> section. Please note that this setting won't be
+  saved if you decide to move the theme to another WordPress installation.</li>
+  <li>Replace the existing logo image with the new one- the image is called <b>logo.png</b> and is located
+  within the <b>images</b> folder of the theme.</li>
+  </ol>
+  
+  <p>Once you have changed the image, you can also change the logo size in the <a href="#options">options setting</a> page &raquo; <b>Styles</b> 
+  &raquo; <b>Logo Settings</b> section.</p>
+  <br />
+  <hr /><h3><a name="menu">The menu</a></h3>
+		<hr /><img src="images/menu.jpg" alt="" /><br />
+         
+ 
+         <p>In WordPress version 3.0 a very nice feature for menu management has been added. Now
+         you can very easily create custom menus with a great flexibility. In order to set the main menu
+         in the header section you have to follow these steps:</p>
+         <ol>
+         <li>Go to Appearance &raquo; Menus and create a new menu. After you create the menu, you can
+         add Page, Category and custom links from the left.
+         <br/>
+         <img src="images/custom_menu.jpg" />
+         </li>
+         <li>After that in the <b>Theme Locations</b> section you have to select the menu that you have created.
+         <img src="images/select_menu.jpg" />
+         </li>
+         </ol>
+        
+  
+  
+ 
+    <br/>    
+        
+        
+        <a name="footer" ><h2>The footer<a href="#toc" class="back_to_top"> &nbsp;back to top</a></h2></a>
+		<hr />
+		
+	
+		
+		<img src="images/footer.jpg" />
+		<p>This theme supports a widgetized footer and you can insert whatever widgets you like in there. There
+		are 4 different columns in the footer and each of them supports multiple widgets. </p>
+		You just have to go to Appearance &raquo; Widgets and and drag and drop the desired widgets into the sections
+		"Footer First Column", "Footer Second Column", "Footer Third Column" and "Footer Fourth Column". 
+		<br/>
+		
+		<br />
+		<a name="sidebar" ><h2>The sidebars<a href="#toc" class="back_to_top"> &nbsp;back to top</a></h2></a>
+		<hr />
+		
+		
+		 <p>This theme supports multiple sidebars and they are all dynamic. This means that you can put whatever you want on them. </p>
+  
+  There are 4 sidebars that go with the theme by default:<br />
+  <ul>
+  <li>Blog Sidebar - a sidebar that is shown on the blog and on the posts from the blog</li>
+  <li>Page Sidebar - a sidebar that is shown on the pages</li>
+  <li>Home Sidebar - a sidebar that is shown on Featured page template</li>
+  <li>Contact Sidebar - a sidebar that is shown on the contact page</li>
+  </ul>
+  
+  <p>If you would like to have more sidebars than the default ones, then you can create your new sidebars in
+  <a href="#options">options setting</a> page &raquo; Sidebars.</p>
+  
+  <p>
+  To customize your sidebars you have to go in the admin panel &raquo; Appearance &raquo; Widgets. There you should see your sidebars on the right part of the page. Now you can drag and drop widgets from the left into your sidebars and that's it!<br />
+  Here is an example of a sidebar:</p>
+  
+  
+	<br/>
+		<a name="sliders" ><h2>The sliders<a href="#toc" class="back_to_top"> &nbsp;back to top</a></h2></a>
+		<hr />	
+		<h3><a name="thum_slider">Thumbnail Slider</a></h3>
+		<hr />
+		
+		<p>The thumbnail slider looks like this:</p>
+		<img src="images/slider.jpg" />
+		
+		<p>In order to add images to this slider you have to go to the <a href="#options">options setting</a> page
+		in the section <b>Thumbnail Slider</b>. All you have to do is to upload the selected image (or add its URL), link of the image
+		(links can be set to the images, so that when the user clicks on the image to be redirected- this
+		feature is optional) and description (also optional) and press
+		the "Add Image" button. After you add the images, you can sort them by dragging and dropping the
+		image box to the desired position.</p>
+		 <div class="note_box"><b>Note:</b> After you have added the images, please do not forget to press the "Save Changes" button. </div>
+	
+		<p>Optimal image size: 942px × 314px</p>
+		
+		<p>In the bottom of this section there is a <b>Slider Settings</b> subsection where you can do the main settings for this
+		slider.</p>
+		
+		<br/>
+		<hr />	
+		<h3><a name="big_thum_slider">Big Thumbnail Slider</a></h3>
+		<hr />
+		<p>The Big Thumbnail Slider looks and functions in the same way as the Thumbnail Slider and the only
+		difference is that it is higher. It is ideal if you need to accentuate more on the images rather on the
+		content below.</p>
+		
+			<p>In order to add images to this slider you have to go to the <a href="#options">options setting</a> page
+		in the section <b>Big Thumbnail Slider</b>. All you have to do is to upload the selected image (or add its URL), link of the image
+		(links can be set to the images, so that when the user clicks on the image to be redirected- this
+		feature is optional) and description (also optional) and press
+		the "Add Image" button. After you add the images, you can sort them by dragging and dropping the
+		image box to the desired position.</p>
+		 <div class="note_box"><b>Note:</b> After you have added the images, please do not forget to press the "Save Changes" button. </div>
+	
+	<p>Optimal image size: 942px × 450px</p>
+		
+		
+		<p>In the bottom of this section there is a <b>Slider Settings</b> subsection where you can do the main settings for this
+		slider. If you would like to make the slider a fader (using only the Fade effect) you have to set the <b>Animation Effect</b>
+		field to <b>Fade</b>.</p>
+		
+		<br/>
+		<hr />
+		<h3><a name="nivo_slider">Nivo Slider/Fader</a></h3>
+		<hr />
+		<p>The Nivo Slider looks like this:</p>
+		<img src="images/nivo.jpg" />
+		
+			<p>In order to add images to this slider you have to go to the <a href="#options">options setting</a> page
+		in the section <b>Nivo Slider</b>. All you have to do is to upload the selected image (or add its URL), link of the image
+		(links can be set to the images, so that when the user clicks on the image to be redirected- this
+		feature is optional) and description (also optional) and press
+		the "Add Image" button. After you add the images, you can sort them by dragging and dropping the
+		image box to the desired position.</p>
+		 <div class="note_box"><b>Note:</b> After you have added the images, please do not forget to press the "Save Changes" button. </div>
+	
+		<p>Optimal image size: 942px × 314px</p>
+		
+		<p>In the bottom of this section there is a <b>Slider Settings</b> subsection where you can do the main settings for this
+		slider.</p>
+		
+		<br/>
+		
+		<a name="template" ><h2>Template Pages<a href="#toc" class="back_to_top"> &nbsp;back to top</a></h2></a>
+		<hr />
+		<h3><a name="index">Index/Blog page</a></h3>
+		<hr />
+		
+		
+		<p>Index page is the default home page that is opened when first installing the theme. This page actually is a blog page. 
+  </p>
+  
+  <p>There are 2 different ways of using this template:</p>
+  <ol>
+  <li>As a home page- it will be opened by default on your site.</li>
+  <li>As a normal, non-home page. In order to do this you have to create a new page, lets say that
+  its name is "Blog". After this you have to go in the Admin Panel &raquo; Settings &raquo; Reading and you have to select "A static page" field. Below this field you have to 
+  select the page which will be your home page in the "Front page" field and you have to select the 
+  name of the page that you have just created (in our case "Blog") in the field "Posts page". Now
+  your Blog page will contain the latest posts.</li>
+  </ol>
+  
+  <b><u>Excluding categories from the blog:</u></b>
+  <p>In order to exclude categories from the blog you have to go to the <a href="#options">options setting</a> page in the
+  section <b>Blog/Index &raquo; Post Settings &raquo; Exclude categories from blog</b>. In this section you have to check the names of the categories that you
+  want to be excluded.</p>
+  <img src="images/exclude_cat.jpg" />
+  <br/><br/>
+  
+   <b><u>Defining the number of posts on the blog:</u></b>
+  <p>In order to define the number of posts per page that will be shown on the blog you have to go to the <a href="#options">options setting</a> page in the
+  section <b>Blog/Index &raquo; Post Settings &raquo; Number of posts per page</b> and you have to edit the value of this field. Default is set to 5. 
+  </p>
+  
+  
+    <b><u>Selecting a slider for the page:</u></b>
+  <p>In order to select a slider you have to go in the <a href="#options">options setting</a> page in the section 
+  <b>Blog/Index &raquo; Header Section Settings &raquo; Slider on posts/blog page</b>. In this field you can select between Thumbnail Slider, Big Thumbnail Slider, Nivo Slider/Fader and None.
+   If None selected, then you can insert a title in the <b>Page Title</b> field below.</p>
+  
+  <img src="images/select_slider.jpg" />
+  <br/><br/>
+  
+  <b><u>Selecting a layout for the page</u></b>
+  <p>For the blog page you can select the layout to be Right Sidebar, Left Sidebar or Full Width. You can do this in the <b>Page Layout</b> section. This setting will affect also
+  the blog post, archive and search layouts.</p>
+  <img src="images/select_layout.jpg" />
+  <br/><br/>
+  
+  <b><u>The blog sidebar:</u></b>
+  <p>By default this page template uses the Blog Sidebar. If you would like to use another sidebar, you can create one
+  in the <a href="#options">options setting</a> page &raquo; Sidebars and after that you can select the created sidebar in the field <b>Sidebar</b>
+  in the <a href="#options">options setting</a> page &raquo; Blog/Index section. To customize it you have to go to the Appearance &raquo; Widgets and find the
+  selected sidebar. You can drag and drop widgets from the left into it.</p>
+  <br/>
+    <b><u>Setting advanced blog pagination</u></b><br/>
+    <img src="images/wp-pagenavi.jpg" />
+    <p>In order to have advanced pagination enabled on your blog page (as on the screenshot above) you need
+    to install the WP-Pagenavi plugin. You can read more about how to do it the section
+    <a href="#widgets">Widgets Included</a>.</p>
+  <br/>
+  <b><u>The blog posts:</u></b>
+  <p>The blog posts look like this:</p>
+  <img src="images/post.jpg" />
+  <br/><br/>
+  
+  <b><u>Setting a thumbnail/image to the blog posts:</u></b>
+ <p>You can read <a href="#thumbnail">here</a> how to set thumbnails to your blog posts.</p>
+  
+   <b><u>Hiding part of the content of the post with the "Read More" link:</u></b>
+   <p>Just before the text that you want to be hidden you have to click on the "Insert more tag" button (Alt+Shift+T):
+   </p>
+   <img src="images/more.jpg" /><br/><br/>
+   
+   <b><u>Enabling threaded comments (with reply functionality):</u></b>
+ <p>In order to enable threaded comments, you have to go to <b>Settings &raquo; Discussion</b> and check the
+ field "Enable threaded (nested) comments x levels deep"</p>
+   
+   
+   
+    
+  <br />
+  
+  <hr/>
+  <h3><a name="home">Home page</a></h3>
+		<hr />
+		
+		
+	<p>In order to make one page a home page you have to select the <b>Template</b> for this page to be <b>Home page</b>.
+  If you want to set this page to be opened by default when a visitor first opens the site you have to go in the
+  admin panel in Settings &raquo; Reading &raquo; Front page displays &raquo; Select a static page and select the page that 
+  you have just created in the <b>Front Page</b> list.</p>
+  <br />  
+  <b><u>Setting the content of the home page</u></b><br />
+  The content layout of the home page looks like this:<br /><br/>
+  <img src="images/home_content.jpg" alt="" /><br />
+  <p>Basically, the structure of the Home page template consists of 2 parts- the main content and the services boxes.
+  The main content you can insert in the main content area of the page. If you would like to have the same intro as the
+  one on the demo (and the screenshot above), you have to use the <b>intro</b> shortcode:</p>
+  
+  <pre name="code" class="html">
+  [intro]Intro content goes here[/intro]
+  </pre>
+  
+ <p>After that comes the services boxes section. In order to set the content and links to them you have to go to the 
+ <a href="#options">options setting</a> page &raquo; Home Page and there for each of the 3 boxes you can set the content,
+ icon and button settings.</p>	
+  <br/>
+  <b><u>Selecting a slider for the page</u></b>
+  <p>In order to select a slider for the page, you have to set the <a href="#custom">custom field</a> <b>Slider</b> in the page.
+  If "None" selected there, you can set the <a href="#custom">custom field</a> <b>Subtitle</b> below.
+  </p>
+  	 <br/> 
+  	 
+ <b><u>Setting the page layout</u></b>
+  <p>For this page you can select the layout to be Right Sidebar, Left Sidebar or Full Width. You can do this by 
+  setting the <a href="#custom">custom field</a> <b>Page Layout</b>.</p>
+  	 <br/> <br/>  
+ 
+  	 	<hr />
+  	<h3><a name="featured">Featured page</a></h3>
+		<hr />
+  	
+  	<p>The main purpose of the Featured page template is to show some featured blog posts. This page
+  	looks like this:</p>
+  	<img src="images/featured.jpg" />
+  	
+  	<p>In order to make one page a featured posts page you have to select the <b>Template</b> for this page to be <b>Featured page</b></p>
+  	
+  	 <p>Above the Featured Posts section you can insert some intro content by inserting it in the main content
+  	 area of the post. </p>
+  
+  <p>All the posts that that are shown below the main page content are posts from one category.
+  So the posts that you need to be shown in this page should be set to belong to one "featured" category. To set the category whose posts will be
+  shown you have to go to the <a href="#options">options setting</a> page &raquo; General &raquo; Other and set the <b>Featured Category</b> field. 
+  <br /><br/>
+  <b><u>Setting a thumbnail/image to the featured posts:</u></b>
+ <p>You can read <a href="#thumbnail">here</a> how to set thumbnails to your featured posts.</p>
+  
+  <b><u>Selecting a slider for the page</u></b>
+  <p>In order to select a slider for the page, you have to set the <a href="#custom">custom field</a> <b>Slider</b> in the page.
+  If "None" selected there, you can set the <a href="#custom">custom field</a> <b>Subtitle</b> below.
+  </p>
+  	 <br/> 
+  	 
+ <b><u>Setting the page layout</u></b>
+  <p>For this page you can select the layout to be Right Sidebar, Left Sidebar or Full Width. You can do this by 
+  setting the <a href="#custom">custom field</a> <b>Page Layout</b>.</p>
+  	 <br/>  
+  
+  <b><u>The sidebar</u></b>
+  <p>By default this page template uses the Home Sidebar. If you would like to use another sidebar, you can create one
+  in the <a href="#options">options setting</a> page &raquo; Sidebars and after that you can set the <a href="#custom">custom field</a> <b>Sidebar</b>
+  and select the sidebar that you have just created. To customize it you have to go to the Appearance &raquo; Widgets and find the
+  selected sidebar. You can drag and drop widgets from the left into it.</p><br/>
+  
+  <b><u>Hiding part of the content of the post with the "Read More" link:</u></b>
+   <p>Just before the text that you want to be hidden you have to click on the "Insert more tag" button (Alt+Shift+T):
+   </p>
+   <img src="images/more.jpg" />
+  <br />
+  
+
+  	<hr />
+	<h3><a name="portfolio">Portfolio page</a></h3>
+		<hr />	
+		
+	<p>The main structure of the portfolio page looks like this:</p>
+	<img src="images/portfolio.jpg" />
+	
+	<p> To make one page a portfolio page you have to select the <b>Template</b> for this page to be <b>Portfolio</b>.<br />
+  </p>
+  <b>For this page you can make the following settings:</b><br />
+  <ol>
+  <li>You can select a portfolio category whose items to be displayed there by <a href="#custom">setting the custom field</a>
+  <b>Display items from categories</b> in the page. If "All Categories" has been selected, all the portfolio items that
+  you have created will be displayed there. You can read about creating porfolio items in the next section below.</li>
+  <li>You can select whether the items to be ordered by the date they have been created or by custom order by <a href="#custom">setting the custom field</a>
+  <b>Portfolio item order</b> in the page.</li>
+  <li>You can set the number of thumbnails per page displayed on the right by <a href="#custom">setting the custom field</a>
+  <b>Number of posts per page</b> in the page.</li>
+   <li>You can disable the automatic thumbnail generation by <a href="#custom">setting the custom field</a>
+  <b>Turn on/off automatic thumbnail generation</b> in the page.</li>
+  <li>You can select a slider/fader on the portfolio page by <a href="#custom">setting the custom field</a> <b>Slider</b>.</li>
+  <li>If no slider is selected, you can add a subtitle to your portfolio page by <a href="#custom">setting the custom field</a>
+  <b>Subtitle.</b></li>
+  <li>You can change the words "More Projects", "Prev" and "Next" in the <a href="#options">options setting</a> page &raquo; <b>Translation</b> &raquo; <b>Portfolio Texts.</b></li>
+  </ol>
+  
+  <br/>
+  
+  <b>Creating portfolio items:</b><br />
+  
+  <p>Creating Portfolio items can be accomplished in the Portfolio section &raquo; Add New.</p>
+  <img src="images/portfolio_post.jpg" /> <br/>
+
+<p>Here are the settings that you can do to each of the portfolio items:</p>
+  <ol>
+  <li> Set the images &raquo; Each portfolio item contains 2 images- a small thumbnail and a bigger preview image which is shown when clicking
+  on the small image above the main content area. <br/>
+  &nbsp;&nbsp;2.1. To set the bigger (preview) image or video you have to <a href="#custom">set the custom field</a> in your post called <b>Preview Image URL</b>
+  to contain the full path of the image. For example <b>http://domain.com/img1_preview.jpg</b><br/>
+  &nbsp;&nbsp;2.2. By default the theme will create the small thumbnail by using the bigger (preview) image. However if you prefer to use
+  your own thumbnail images you have to <a href="#custom">set the custom field</a> <b>Turn on/off automatic thumbnail generation </b>
+  in your portfolio page to <b>off</b>. After that in your portfolio post you have to <a href="#custom">set the custom field</a> called <b>Thumbnail URL</b> and set its value
+  to be the full path of the image. For example <b>http://domain.com/img1.jpg</b>. The optimal size of the images is 110px x 100px.</li>
+  <li> You can set the content of the portfolio item in the main content area.</li>
+
+	</ol>	
+		
+		
+		
+		
+	<br/>
+	<hr />	
+	<h3><a name="portfolio_gallery">Portfolio Gallery page</a></h3>
+		<hr />	
+		
+	<p>The main structure of the portfolio gallery template looks like this:</p>
+	<img src="images/gallery.jpg" />
+	
+	<p> To make one page a portfolio page you have to select the <b>Template</b> for this page to be <b>Portfolio Gallery</b>.<br />
+  </p>
+  <b>For this page you can make the following settings:</b><br />
+  <ol>
+  <li>You can select a portfolio category whose items to be displayed there by <a href="#custom">setting the custom field</a>
+  <b>Display items from categories</b> in the page. If "All Categories" has been selected, all the portfolio items that
+  you have created will be displayed there. You can read about creating porfolio items in the next section below.</li>
+   <li>You can select how many columns (items per row) to be displayed by <a href="#custom">setting the custom field</a>
+  <b>Number of columns</b> in the page. You can select between 2,3 and 4 columns.</li>
+  <li>You can select whether the items to be ordered by the date they have been created or by custom order by <a href="#custom">setting the custom field</a>
+  <b>Portfolio item order</b> in the page.</li>
+   <li>You can show/hide the portfolio item category filter by <a href="#custom">setting the custom field</a>
+  <b>Show Portfolio Categories</b> in the page.
+  <img src="images/portfolio_cat.jpg" alt="" />
+  <p>The purpose of this filter is to display the portfolio categories and filter the items by the category that is
+  set to them. If in the field <b>Display items from categories</b> above "All Categories" is selected, then all the
+  portfolio categories will be displayed. If a category is selected there, only this category and its subcategories
+  will be displayed in this filter.</p>
+  </li>
+   <li>You can show/hide the portfolio item descriptions by <a href="#custom">setting the custom field</a>
+  <b>Show Item Descriptions</b> in the page. If it is set to "Show" the item descriptions will be displayed below
+  the item thumbnail. If set to "Hide" and the the item has a description set to it, then the description is displayed
+  in the lightbox.</li>
+  <li>You can set the number of items displayed per page <a href="#custom">setting the custom field</a>
+  <b>Number of posts per page</b> in the page.</li>
+   <li>You can disable the automatic thumbnail generation by <a href="#custom">setting the custom field</a>
+  <b>Turn on/off automatic thumbnail generation</b> in the page.</li>
+  <li>You can select a slider/fader on the portfolio page by <a href="#custom">setting the custom field</a> <b>Slider</b>.</li>
+  <li>If no slider is selected, you can add a subtitle to your portfolio page by <a href="#custom">setting the custom field</a>
+  <b>Subtitle.</b></li>
+   <li>You can turn on/off the link of the title by <a href="#custom">setting the custom field</a>
+  <b>Turn on/off title link</b> in the page. When descriptions are displayed and this field is set to ON, then after
+  clicking on the title the user will be redirected to the post content area.</li>
+  </ol>
+  
+  <br/>
+  
+<b>Creating portfolio items:</b><br />
+  
+  <p>Creating Portfolio items can be accomplished in the Portfolio section &raquo; Add New.</p>
+  <img src="images/portfolio_post.jpg" /> <br/>
+
+<p>Here are the settings that you can do to each of the portfolio items:</p>
+  <ol>
+  <li>Select what action to be taken after clicking on the item thumbnail by <a href="#custom">setting the custom field</a>
+  <b>When clicked on the image open:</b>. You have the following possibilities:
+  <ul>
+  <li><b>Preview Image in lightbox</b>- when clicked on the thumbnail the image that is set in the Preview Image URL custom
+  field of the item will be displayed. By default the theme will create the small thumbnail by using the bigger (preview) image. However if you prefer to use
+  your own thumbnail images you have to <a href="#custom">set the custom field</a> <b>Turn on/off automatic thumbnail generation </b>
+  in your portfolio page to <b>off</b>. After that in your portfolio post you have to <a href="#custom">set the custom field</a> called <b>Thumbnail URL</b> and set its value
+  to be the full path of the image. For example <b>http://domain.com/img1.jpg</b>. </li>
+  <li><b>The content of the item</b>- when clicked on the thumbnail a page that contains the main content of the item (inserted
+  in the main content area) will be displayed. You can still use the automatic thumbnail generation functionality and generate
+  the smaller thumbnail by inserting the image URL in the <b>Preview Image URL</b> field.</li>
+  <li><b>Play Video</b>- when clicked on the thumbnail a video will be played. For the video link you have to <a href="#custom">set the custom field</a> 
+   <b>Custom Link/Video URL</b> by inserting the link in there. You can still use the automatic thumbnail generation functionality and generate
+  the smaller thumbnail by inserting the image URL in the <b>Preview Image URL</b> field. 
+  	<p>Here are some examples of inserting videos:</p>
+  	<ul>
+  	<li><b>YouTube video:</b><br/>
+  	<code>
+  	http://www.youtube.com/watch?v=geplBr2fcZc
+  	</code>
+  	</li>
+  	<li><b>Vimeo:</b><br/>
+  	<code>
+  	http://vimeo.com/11326568
+  	</code>
+  	<p>Please note that a vime link containing www is not valid (such as http://www.vimeo.com/11326568)</p>
+  	</li>
+  	<li><b>Flash Alone:</b><br/>
+  	<img src="images/flashlink.jpg" alt="" />
+  	<p>Please note that you need to insert width and height of the video</p>
+  	</li>
+  	</ul>
+  
+  </li>
+  <li><b>Custom Link</b>- when clicked on the thumbnail the user will be redirected to a custom link that you have set in the
+  custom field <b>Custom Link/Video URL</b> of the item. You can still use the automatic thumbnail generation functionality and generate
+  the smaller thumbnail by inserting the image URL in the <b>Preview Image URL</b> field.</li>
+  <li><b>Do Nothting</b> - nothing happens when clicked on the thumbnail image. You can still use the automatic thumbnail generation functionality and generate
+  the smaller thumbnail by inserting the image URL in the <b>Preview Image URL</b> field.</li>
+  </ul>
+  </li>
+  <li> You can set the content of the portfolio item in the main content area. This content will be displayed after
+  clicking on the title of the item (when descriptions are enabled and title links are set to ON on the portfolio page)
+  or after clicking on the item (if "The content of the item" has been selected as an action above). </li>
+	<li>You can set a description to the item by <a href="#custom">setting the custom field</a>
+  <b>Description</b>.If in the portfolio page the <b>Show Item Descriptions</b> is set to "Show" the item descriptions will be displayed below
+  the item thumbnail. If set to "Hide" and the the item has a description set to it, then the description is displayed
+  in the lightbox. </li>
+  <li>You can set the item a category so that it will be filtered by this category in the category filter above
+  the items (if enabled) in the right sidebar of the portfolio item page:<br/>
+   <img src="images/portfolio_cats.jpg" alt="" />
+   <br/> You can read more about the category filter in the section above (where the Portfolio page settings are described).
+  </li>
+  <li>You can set an order number to your item if in the portfolio page the <b>Portfolio item order</b> field is
+  set to "Custom Order". You can set the order number in the <b>Attributes</b> section of the right sidebar:<br/>
+   <img src="images/portfolio_order.jpg" alt="" /></li>
+  
+	</ol>	
+		
+		
+		
+		
+	<br/>
+	
+	
+		<br/>
+	<hr />	
+	<h3><a name="quick_gallery">Quick/Easy Gallery page</a></h3>
+		<hr />	
+		
+		
+			<div class="note_box"><b>Note: </b> Below are explained the main steps for setting the Quick Gallery page. Also you can
+		have a look at the "Creating a quick gallery with Dandelion Theme" video <a href="http://support.pexeto.com/topic/video-4">here</a>.  <br/>
+		This video is regarding the "Dandelion" theme, but the steps you need to follow are the same for this theme.
+		In the video are shown the main steps you need to accomplish in order to set a portfolio gallery, however for full
+		reference please read the instructions below.
+		</div>
+	
+	
+	<p>The purpose of this gallery is to insert multiple images at once - you can very quickly create multiple galleries just for
+	several minutes.</p>
+	
+	<p><b>In order to create a quick gallery you have to:</b></p>
+	<ol>
+	<li>Create a new page (you don't have to set a page template to it)</li>
+	<li>Click on the "Add an image" button above the main content area:<br/>
+	<img src="images/upload-img.jpg" />
+	</li>
+	<li>Upload the images you would like to be displayed on the gallery. As soon as you upload
+	the images from the page, a Gallery tab will be displayed:<br/>
+	<img src="images/quick_gallery.jpg" />
+	</li>
+	<li>When you click on the "Show" link next to each image you can set some texts to it. The text that you enter
+	in the Caption section will be displayed as a caption below the image. The value of the Alternate Text field
+	will be displayed in the lightbox as a title and the value of the Title field will be displayed in the
+	lightbox below the image.</li>
+	<li>Once you have set all your images, you have to click on the "Save Changes" button and in your main content area you have to insert a shortcode like this one:<br/>
+	
+	<b>If the page layout is full width:</b><br/>
+	<code>
+	[gallery columns="5" link="file"]
+	</code>
+	
+	<br/>
+	<b>If the page contains a sidebar:</b><br/>
+	<code>
+	[gallery columns="3" link="file"]
+	</code>
+	
+	</li>
+	</ol>
+	
+	
+	<br/>
+	<hr />	
+	<h3><a name="contact">Contact Form page</a></h3>
+		<hr />		
+		
+		
+	  The contact form page looks like this:<br />
+  <img src="images/contact.jpg" alt="" /><br /><br />
+  
+  <p>This page contains an AJAX contact form and a separate contact sidebar.</p>
+  <p> To make one page contain a contact form you have to do some settings. When you create (or edit)
+  your page, you should find the field <b>Template</b> and in it to choose the <b>Contact form page</b> option. After that immediately your
+  page will contain a contact form.</p>
+  <p>To set a text in the contact page, just insert it as a content of the page.</p>
+  <b><u>Setting the email address to which to send the email</u></b><br />
+  To set the email address, you have to go to the <a href="#options">options setting</a> page and in the section <b>Contact page</b> find the field <b>Email to which to send contact form message</b> in.
+   In this field you have to insert your email address. <br />
+  As you can see in this section there are some other fields that you can edit. I have provided this feature in case that you need
+  to translate your site or just don't like the text that is output.<br />
+  <br />
+  
+  <b><u>Setting the sidebar</u></b>
+   <p>By default this page template uses the Contact Sidebar. If you would like to use another sidebar, you can create one
+  in the <a href="#options">options setting</a> page &raquo; Sidebars and after that you can set the <a href="#custom">custom field</a> <b>Sidebar</b>
+  and select the sidebar that you have just created. To customize it you have to go to the Appearance &raquo; Widgets and find the
+  selected sidebar. You can drag and drop widgets from the left into it.</p><br/>
+  
+		
+	
+	 <b><u>Selecting a slider for the page</u></b>
+  <p>In order to select a slider for the page, you have to set the <a href="#custom">custom field</a> <b>Slider</b> in the page.
+  If "None" selected there, you can set the <a href="#custom">custom field</a> <b>Subtitle</b> below.
+  </p>
+  	 <br/> 
+  	 
+ <b><u>Setting the page layout</u></b>
+  <p>For this page you can select the layout to be Right Sidebar, Left Sidebar or Full Width. You can do this by 
+  setting the <a href="#custom">custom field</a> <b>Page Layout</b>.</p>
+  	 <br/>  
+	
+		
+		
+	
+	<br/><hr />
+	<h3><a name="default">The Default page</a></h3>
+		<hr />	
+	<p>The default page contains a separate sidebar on the right.By default this page template uses the Page Sidebar. If you would like to use another sidebar, you can create one
+  in the <a href="#options">options setting</a> page &raquo; Sidebars and after that you can set the <a href="#custom">custom field</a> <b>Sidebar</b>
+  and select the sidebar that you have just created. To customize it you have to go to the Appearance &raquo; Widgets and find the
+  selected sidebar. You can drag and drop widgets from the left into it.</p>	
+  
+   <b><u>Selecting a slider for the page</u></b>
+  <p>In order to select a slider for the page, you have to set the <a href="#custom">custom field</a> <b>Slider</b> in the page.
+  If "None" selected there, you can set the <a href="#custom">custom field</a> <b>Subtitle</b> below.
+  </p>
+  	 <br/> 
+  	 
+ <b><u>Setting the page layout</u></b>
+  <p>For this page you can select the layout to be Right Sidebar, Left Sidebar or Full Width. You can do this by 
+  setting the <a href="#custom">custom field</a> <b>Page Layout</b>.</p>
+  	 <br/>  
+  	 
+  	 
+  	 <br/><hr />
+	<h3><a name="styles">Changing the theme style</a></h3>
+		<hr />
+		<p>All the style settings can be done in the <a href="#options">options setting</a> page &raquo; <b>Styles</b></p>
+		<p>The theme goes with several predefined skins. You can change between those skins in the <b>Predefined Skins</b> section:
+		</p>
+		<img src="images/skins.jpg" alt="" />
+	<br/>
+		<p>If you would like to use another custom color, rather than one of the predefined colors, you can select
+		your color in the <b>Custom Theme Color</b> field:</p>
+		<img src="images/custom_color.jpg" alt="" />
+		<br/>
+		<p>If you would like to select a pattern for the theme, you can do it in the <b>Theme Pattern</b> section. Please
+		note that a preview of the patterns in the drop down list (as shown on the screenshot below) is available only with
+		Mozilla Firefox.</p>
+		<img src="images/patterns.jpg" alt="" />
+		<br/>
+		
+		<p>These are the main style settings that you can do on the theme. In this section (Styles section) there
+		are many other custom settings that you might need to change such as text sizes, text colors, background colors, etc. </p>
+		
+		
+		
+		<br/>
+		<a name="shortcodes" ><h2>Shortcodes<a href="#toc" class="back_to_top"> &nbsp;back to top</a></h2></a>
+		<hr />
+		
+		<p>This theme goes with 28 shortcodes. For a full reference of their usage and examples you can refer
+		to the Features section of the <a href="http://pexeto.com/anthology_wp/">demo</a>. </p>
+		<p>Using shortcodes is really easy- you just have to insert the shortcode in the main content area of the post/page.
+		For example, if you would like to insert a button, you have to insert a content like this one:</p>
+		
+		<pre name="code" class="html">
+		[button href="http://site.com"]Button text[/button]
+		</pre>
+		
+		<b><u>Formatting buttons available from version 1.4</u></b><br/>
+		
+		<p>In version 1.4 of the theme, some formatting buttons have been included:</p>
+		
+		<img src="images/formatting_buttons.jpg" />
+		
+		<p>There are buttons for almost all of the styled elements that the theme provides. These buttons allow you
+		to more easily insert styled elements and also you are able to see how they will look from the editor. 
+		However, if you feel more comfortable with using raw shortcodes, you can do it - they are still available for you.</p>
+		
+		<br/>
+		
+		<b><u>Inserting Lighbox image</u></b>
+		<p>There are different ways to insert a lightbox image (via the formatting buttons and the shortcodes), but
+		the easiest way to set an image lightbox is to insert the image into the post (via the "Add an Image" button),
+		after that click on the image -> an Edit Image button will be displayed. You have to click on this button,
+		and in the window that is opened you have to click on the "Advanced Settings" section. In this section, in the
+		field "Link rel" you have to insert the word <b>lightbox</b>. This automatically will set the lightbox functionality to the image.</p>
+		
+		
+		
+		<br/>
+		<a name="translation" ><h2>Translation<a href="#toc" class="back_to_top"> &nbsp;back to top</a></h2></a>
+		<hr />	
+	
+	
+	<p> For this theme I have provided the possibility to translate the built-in words from the admin panel, without having to
+  edit the PHP files. You can do this in the <a href="#options">options setting</a> in the <b>Translation</b> section. For
+  the contact form you have to edit the fields in the <b>Contact page</b> section.</p>
+   <img src="images/translation.jpg" />
+   
+   <br/><br/>
+   
+   <br/>
+		<a name="widgets" ><h2>Widgets included<a href="#toc" class="back_to_top"> &nbsp;back to top</a></h2></a>
+		<hr />
+   <p>The theme goes with 3 additional widgets included:</p>
+   <ul>
+   <li>Pexeto's portfolio posts loader - its purpose is to display the latest portfolio thumbnails in the sidebar</li>
+   <li>WP PageNavi - displays an advanced blog pagination - downloaded from <a href="http://wordpress.org/extend/plugins/wp-pagenavi/">http://wordpress.org/extend/plugins/wp-pagenavi/</a></li>
+   <li>Simple Google Map - displays a Google Map in the sidebar - downloaded from <a href="http://wordpress.org/extend/plugins/simple-google-map/">http://wordpress.org/extend/plugins/simple-google-map/</a></li>
+   </ul>
+ 
+ <p>All the widgets are located within the <b>plugins</b> directory of the download folder. In order to activate them,
+ you need to go to the WordPress admin panel -> Plugins -> Add New -> click on the <b>Upload</b> link and 
+ find the desired plugin file on your local file system. After the plugin has been uploaded successfully you
+ need to click on the <b>Activate</b> link. For the WP PageNavi plugin only activation is needed. For the other
+ two you need to go to the <b>Widgets</b> section and drag and drop them to the desired sidebar.</p>
+   
+   <br/>
+   <br/>
+		<a name="css" ><h2>CSS Files<a href="#toc" class="back_to_top"> &nbsp;back to top</a></h2></a>
+		<hr />
+		
+		<p>The theme contains the following CSS files:</p>
+		<ul>
+<li>style.css - the main CSS file</li>
+<li>style_ie6.css - only for Internet Explorer 6</li>
+<li>style_ie7.css - only for Internet Explorer 7</li>  
+<li>style_ie8.css - only for Internet Explorer 8</li>  
+<li>prettyPhoto.css - style for the PrettyPhoto plugin </li>
+<li>fonts.css- style for the fonts used</li>
+<li>nivo-slider.css- style for the Nivo slider</li>
+<li>superfish.css- style for drop-down menu -- downloaded from <a href="http://users.tpg.com.au/j_birch/plugins/superfish/#download">http://users.tpg.com.au/j_birch/plugins/superfish/#download</a></li>
+
+</ul>
+
+<p>The first file (style.css) contains all of the specific stylings for pages. The file is separated into sections:</p>
+<ul>
+          <li> <b>Text styles</b> (containing styles for the text)</li>
+		  <li> <b>Logo</b>(containing styles for the logo)</li>
+		  <li> <b>Menu</b> (containing the styles for the main navigation menu)</li>
+          <li> <b>Header</b> (containing the styles for the header)</li>
+          <li><b>Slider</b> (containing the styles for the 3 sliders)</li>
+		  <li> <b>Content</b> (containing styles for the main site content)</li>
+          <li> <b>Sidebar Menu</b> (containing styles for the sidebar) </li>
+		  <li> <b>Footer</b> (containing styles about copyrights text)</li>
+		  <li> <b>Contact page</b> (containing styles about contact page and the email form)</li>
+		  <li><b>portfolio page</b> (containing the styles for the portfolio page)</li>
+		  </ul>
+<br />
+
+For each of the main parts of the website there are comments. For example, for the menu the comments look like this: <br />
+<pre name="code" class="css"> 
+/*-------------------- MENU --------------------*/ 
+--menu styles here--
+ </pre>
+<br />
+   
+     <br/>
+		<a name="js" ><h2>Javascript files<a href="#toc" class="back_to_top"> &nbsp;back to top</a></h2></a>
+		<hr />
+   
+   
+  <p>The theme contains the following JavaScript files:</p>
+		<ul>
+<li>jquery-1.4.js- jQuery- downloaded from <a href="http://jquery.com/">http://jquery.com/</a></li>
+<li>slider.js- this is the thumbnail image slider. See <a href="#slider">here</a> how to work with the slider.</li>
+<li>script.js- this is the main script for the page. It uses some simple functions used in the website like validation and making AJAX request for sending email.</li>
+<li>supersleight.js- this is a script that makes transperant .png images to look transperant in Internet Explorer 6 - downloaded from <a href="http://24ways.org/2007/supersleight-transparent-png-in-ie6/">http://24ways.org/2007/supersleight-transparent-png-in-ie6/</a></li>
+<li>jquery.prettyPhoto.js- this ithe jQuery plugin for lightbox effect for the images on the portfolio page- downloaded from <a href="http://www.no-margin-for-errors.com/projects/prettyPhoto-jquery-lightbox-clone/#download">http://www.no-margin-for-errors.com/projects/prettyPhoto-jquery-lightbox-clone/#download</a></li>
+<li>portfolio-setter.js- this is the script that contains the main gallery and gallery with descriptions functionality</li>
+<li>portfolio-previewer.js- this is the script that contains the portfolio showcase functionality</li>
+<li>superfish.js- this is the script for the drop-down menu- downloaded from <a href="http://users.tpg.com.au/j_birch/plugins/superfish/#download">http://users.tpg.com.au/j_birch/plugins/superfish/#download</a></li>
+<li>jquery-easing.js- for the animation transitions- downloaded from <a href="http://gsgd.co.uk/sandbox/jquery/easing/">http://gsgd.co.uk/sandbox/jquery/easing/</a></li>
+<li>jquery.nivo.slider.pack.js- the Nivo slider- downloaded from <a href="http://nivo.dev7studios.com">http://nivo.dev7studios.com</a></li>   
+<li>jquery.tools.min.js- jQuery Tools library- downloaded from <a href="http://flowplayer.org/tools/download/index.html">http://flowplayer.org/tools/download/index.html</a></li>   
+<li>ajaxupload.js- script for the image uploading- downloaded from <a href="http://valums.com/ajax-upload/">http://valums.com/ajax-upload/</a></li>   
+<li>colorpicker.js - script for the color picker- downloaded from <a href="http://eyecon.ro/colorpicker/#download">http://eyecon.ro/colorpicker/#download</a></li>   
+<li>jquery-ui.js- jQuery UI - downloaded from <a href="http://jqueryui.com/">http://jqueryui.com/</a></li>   
+   
+    </ul>
+    
+    
+    <br/>
+		<a name="psd" ><h2>PhotoShop files<a href="#toc" class="back_to_top"> &nbsp;back to top</a></h2></a>
+		<hr />
+		
+		<p>There are 4 PSD file included in this theme. Every PSD file has a clear structure and is organised in groups with well named layers.<br/><br/>
+
+
+
+<br/>
+<b>Graphic sources:</b><br/>
+<ul>
+<li>Images used on the demo: <a href="http://www.flickr.com/photos/dexxus">http://www.flickr.com/photos/dexxus</a> - Special thanks! </li>
+<li>Icons: <a href="http://www.iconfinder.com/blog/anniversary/">http://www.iconfinder.com/blog/anniversary/</a></li>
+<li>Pixel patterns <a href="http://naomiatkinsonproducts.com/">http://naomiatkinsonproducts.com/</a></li>
+<li>Vector Patterns <a href="http://speckyboy.com/2010/04/08/6-free-vector-seamless-backgrounds-source-files/">http://speckyboy.com/2010/04/08/6-free-vector-seamless-backgrounds-source-files/</a></li>
+<li>Grunge Brushes <a href="http://wefunction.com/2010/04/42-more-subtle-grunge-brushes/">http://wefunction.com/2010/04/42-more-subtle-grunge-brushes/</a></li>
+<li>Social Media Icons <a href="http://www.komodomedia.com/blog/2009/06/social-network-icon-pack/">http://www.komodomedia.com/blog/2009/06/social-network-icon-pack/</a></li>
+</ul>
+
+   
+   
+   <br/>
+		<a name="php" ><h2>PHP files<a href="#toc" class="back_to_top"> &nbsp;back to top</a></h2></a>
+		<hr />
+  Except the main files needed for this theme to run, here are the other external PHP files used:
+  
+   <ul>
+<li>timthumb.php- the purpose of this script is to create small thumbnails from bigger images. The file is downloaded from: <a href="http://code.google.com/p/timthumb/">http://code.google.com/p/timthumb/</a></li>
+<li>upload-handler.php- this is the file that contains the functionality for the image uploading in the theme options page - downloaded from <a href="http://valums.com/ajax-upload/">http://valums.com/ajax-upload/</a> </li>
+<li>update-notifier.php - this is the file that contains the functionality for the update notifications when a new update of the theme is available - downloaded from <a href="https://github.com/unisphere/unisphere_notifier">https://github.com/unisphere/unisphere_notifier</a></li>
+</ul>
+        
+<hr>	
+
+ <br/>
+		<a name="updates" ><h2>Updates<a href="#toc" class="back_to_top"> &nbsp;back to top</a></h2></a>
+		<hr />
+
+<b>Installing an update</b>
+<p>There are two main ways of installing an update:</p>
+<ul>
+<li><i>By uploading the theme as a new theme</i>- this is an easier way to accomplish this. You just have to upload
+the updated theme zip file via the built in WordPress theme uploader as a new theme as explained <a href="#activate">here</a>
+and activate the theme. All the settings that you have made to the older theme will affect the new one.</li>
+<li><i>Via FTP</i> - you can use an FTP client (such as FileZilla) and replace all the theme files with the
+updated ones.</li>
+</ul>
+
+<div class="note_box">
+		 <b>Note: </b>Please note that with the file replacing all the code changes you have made to the files 
+		 (if you have made any) will be lost, so please
+		 make sure you have a backup copy of the theme files before you do the replacement. All the settings that
+		 you have made from the admin panel won't be lost- they will be still available.
+		</div>
+		
+		
+		<br/><hr />
+	<h3><a name="v11">Version 1.1</a></h3><hr />	
+	<p>This version includes:</p>
+	<ul>
+	<li>Code improvements</li>
+	<li>Added an option for hiding blog content</li>
+	</ul>
+		
+		
+	<br/><hr />
+	<h3><a name="v12">Version 1.2</a></h3><hr />	
+	<p>This version includes:</p>
+	<ul>
+	<li>Added a sidebar generation functionality</li>
+	<li>Code improvements</li>
+	</ul>	
+	
+	<br/><hr />
+	<h3><a name="v13">Version 1.3</a></h3><hr />	
+	<p>This version includes:</p>
+	<ul>
+	<li>Added automated thumbnail cropping functionality for the thumbnail sliders- you can enable it in the 
+	Anthology Options -> Thumbnail Slider/Big Thumbnail Slider -> Settings -> Automatic Thumbnail Cropping.</li>
+	<li>Some small issues fixed</li>
+	</ul>	
+	
+		<br/><hr />
+	<h3><a name="v14">Version 1.4</a></h3><hr />	
+	<p>This version includes:</p>
+	<ul>
+	<li>Added content formatting buttons - you can read more about this in the <a href="#shortcodes">Shortcodes</a> section</li>
+	<li>Added Upload buttons to the portfolio item image fields</li>
+	<li>Added WordPress Quick Gallery support - you can read <a href="#quick_gallery">here</a> about how to set the gallery</li>
+	<li>Fixed some small issues</li>
+	<li>Added some other improvements</li>
+	</ul>	
+	
+	<br/><hr />
+	<h3><a name="v141">Version 1.4.1</a></h3><hr />	
+	<p>This version includes:</p>
+	<ul>
+	<li>Fixed some incompatibilities for WordPress 3.1 for portfolio items</li>
+	</ul>	
+	
+		<br/><hr />
+	<h3><a name="v142">Version 1.4.2</a></h3><hr />	
+	<p>This version includes:</p>
+	<ul>
+	<li>Upgraded the Nivo slider</li>
+	<li>Upgraded the PrettyPhoto library</li>
+	<li>Upgraded the Timthumb resizing script</li>
+	<li>Made the theme use the jQuery library WordPress provides, rather than its local copy - this would
+	improve the performance and plugin compatilbility</li>
+	<li>Fixed some small issues</li>
+	<li>Code improvements</li>
+	</ul>	
+	
+	<br/><hr />
+	<h3><a name="v143">Version 1.4.3</a></h3><hr />	
+	<p>In this version we have improved the Thumbnail Slider functionality when browser tab is minimized - 
+	jQuery 1.6 is now using the new requestAnimationFrame method provided by browsers to make the animations 
+	even smoother which leads to some additional animations when the browser tab was minimized and maximized back.
+	</p>
+	
+	<br/><hr />
+	<h3><a name="v144">Version 1.4.4</a></h3><hr />	
+<p>In this version we have updated Timthumb (the image resizing script) to the latest version (1.34) - a security vulnerability
+	was found regarding this script and version 1.34 fixes this vulnerability.</p>
+	
+
+<br/><hr />
+	<h3><a name="v145">Version 1.4.5</a></h3><hr />	
+	<p>This version includes:</p>
+	<ul>
+	<li>Updated Timthumb to the latest version available (2.8) - even more security has been implemented in this version</li>
+	<li>Implemented an update notification functionality - from now on, when new updates are available of the theme,
+	a notification will be displayed under the "Dashboard" menu.</li>
+	<li>Added more security to the upload image functionality</li>
+	<li>Fixed a typo in the options panel</li>
+	</ul>
+	
+
+ <br/>
+		<a name="troubleshooting" ><h2>Troubleshooting<a href="#toc" class="back_to_top"> &nbsp;back to top</a></h2></a>
+		<hr />
+
+		<p>In this section you can check the most common issues and the solutions for them</p>
+		
+		<ul>
+		<li><b>Portfolio thumbnail not generated</b>
+		<p>Sometimes the image resizing script doesn't generate the image due to the following reasons:
+
+		*functions/cache directory is not editable (777)<br/>
+		*original image size is too big (more than 2000 pixels)<br/>
+		*original image is not located within the WordPress installation directory
+
+		</li>
+		<li><b>Portfolio section does not exist in the main menu</b>
+		<p>This theme is available for WordPress version 3.0 or higher, so please make sure you have the latest 
+		version installed.</p>
+		</li>
+		
+		<li><b>Appearance &raquo; Menus section does not exist</b>
+		<p>This theme is available for WordPress version 3.0 or higher, so please make sure you have the latest 
+		version installed.</p>
+		</li>
+		
+		<li><b>Portfolio items not loading</b>
+		<p>This issue is mostly likely to happen if you have uploaded the theme via an FTP client.
+		 If so, you need to make sure that the main theme files are contained within just one directory of the <b>wp-themes</b>
+		 directory, not more. For example for the style.css file it is correctly to be located within <b>http://site.com/wp-content/themes/Anthology/css/fonts.css</b>
+		 but not <b>http://site.com/wp-content/themes/Anthology/Anthology/css/fonts.css</b></p>
+		 <p>Another possible reason for this is that you haven't inserted some of the image/video URLs correctly.
+		 So for images, please make sure you have set the image URLs and for videos please make sure you have inserted
+		 correctly the video URLs. There are some examples of correct video URLs in the <a href="#portfolio_gallery">Portfolio Gallery</a>
+		 section above.</p>
+		</li>
+		
+		<li><b>Contact form not sending emails</b></li>
+		<p>This issue is mostly likely to happen if you have uploaded the theme via an FTP client.
+		 If so, you need to make sure that the main theme files are contained within just one directory of the <b>wp-themes</b>
+		 directory, not more. For example for the style.css file it is correctly to be located within <b>http://site.com/wp-content/themes/Anthology/css/fonts.css</b>
+		 but not <b>http://site.com/wp-content/themes/Anthology/Anthology/css/fonts.css</b></p>
+		 <p>Also another reason for this issue is that the server where the theme is hosted has some restrictions set about
+		 email sending.</p>
+		 
+		 
+		 <li><b>Portfolio items not loading on Internet Explorer</b>
+		 <p>This issue is most likely to happen if you have a broken image URL has been inserted. In this case, please make
+		 sure that all the image URLs that you have inserted are URLs of existing images.</p>
+		 </li>
+		 
+		 <li><b>In the Anthology Options Upload Button/Color Picker/Add Slider Image Functionality is not working</b>
+		 <p>This is most likely to be caused by a plugin you have installed. You can try to deactivate all the plugins
+		 you have installed and check if it will work. If it turns out that a plugin is causing this, you can deactivate
+		 the plugin until you set the theme and activate it back once you are done.</p>
+		 </li>
+		 
+		</ul>
+		
+		
+		<br/>
+		<a name="support" ><h2>Support<a href="#toc" class="back_to_top"> &nbsp;back to top</a></h2></a>
+		<hr />
+		
+	
+		<p>We will do our best to assist with questions directly related to 
+		the theme set up, however please note that theme support is completely voluntary for ThemeForest authors. 
+		Therefore before you contact us, please consider finding an answer to your question in:</p>
+		<ul>
+		<li>The relevant section of the documentation</li>
+		<li>Search on the <a href="http://support.pexeto.com/">Pexeto Support Forum</a> if your question has been already
+		answered</li>
+		<li><a href="troubleshooting">Troubleshooting section</a> above</li>
+		<li><a href="http://codex.wordpress.org/Main_Page">WordPress Codex</a> for general WordPress questions</li>
+		<li><a href="http://google.com">Google</a> for general questions</li>
+		</ul>
+		
+		<div class="note_box">
+		 <b>Note: </b>If you have already explored all the sources of information stated above, and you are still experiencing 
+		problems with the theme set up, please post a topic with your question on the <a href="http://support.pexeto.com/">Pexeto Support Forum</a>. 
+		</div>
+		<br/>
+		<hr/>
+		<h3 class="center alt title uppercase">Once again, thank you so much for purchasing this theme! If you like it, please don't forget to rate it on the ThemeForest site.</h3> 
+		
+		<p class="append-bottom alt large"><strong>Pexeto</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

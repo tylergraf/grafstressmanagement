@@ -1,0 +1,2 @@
+Please note that WordPress doesn't export all the settings and if you import this file to your installation, some of the settings set on the demo (such as menus, slider images and sidebars) won't be imported.
+As the theme is very easy to set, it is recommended that you follow the instructions in the documentation, rather than installing the demo content as you might loose more time in getting rid of the unused demo data afterwards.
