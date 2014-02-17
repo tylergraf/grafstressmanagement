@@ -34,7 +34,7 @@ if(have_posts()){
 
 the_content();
 
-include(TEMPLATEPATH . '/includes/form.php');
+// include(TEMPLATEPATH . '/includes/form.php');
 	}
 }
 
